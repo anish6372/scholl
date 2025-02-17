@@ -1,0 +1,164 @@
+
+.home-page {
+  background-color: white;
+  color: black;
+}
+nav{
+  background-color:pink;
+  padding:15px;
+ 
+}
+
+
+.home-page.dark-mode {
+  background-color: #1a202c; 
+  color: white;
+}
+
+.home-page header {
+  padding: 16px; 
+  background-color: #007bff; 
+  color: white;
+}
+
+.home-page nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page nav ul {
+  display: flex;
+  gap: 16px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-page nav ul li {
+  margin: 0;
+}
+
+.home-page nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.home-page nav ul li a:hover {
+  background-color: #0056b3; 
+}
+
+.home-page nav button {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 4px; 
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-page nav button:hover {
+  background-color: #0056b3; 
+}
+
+.home-page h1 {
+  font-size: 2.25rem; 
+  font-weight: bold;
+  margin-top: 16px; 
+}
+
+.home-page img {
+  margin-top: 16px; 
+}
+
+.home-page section {
+  padding: 16px; 
+}
+
+.home-page h2 {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 16px; 
+}
+
+.home-page .course-list {
+  display: grid;
+  gap: 16px; 
+}
+
+.home-page .course-list.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.home-page .course-list.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home-page .course-list.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-page .course-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  overflow: hidden;
+}
+
+.home-page .course-item h3 {
+  font-size: 1.25rem; 
+  font-weight: bold;
+  margin-bottom: 8px; 
+}
+
+.home-page .course-item p {
+  color: #4a5568; 
+  margin-bottom: 8px; 
+}
+
+.home-page .achievements ul {
+  list-style-type: disc;
+  padding-left: 20px; 
+}
+
+.home-page .testimonials-slider {
+  margin-top: 32px; 
+  padding: 16px;
+}
+
+.home-page .testimonials-slider .testimonial {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  padding: 16px; 
+}
+
+.home-page .testimonials-slider .testimonial p {
+  color: #4a5568; 
+  margin-bottom: 8px;
+}
+
+.home-page .testimonials-slider .testimonial strong {
+  color: #718096; 
+}
+
+.footer {
+  background-color: #007bff; 
+  color: white;
+  padding: 16px; 
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

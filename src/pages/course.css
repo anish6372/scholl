@@ -1,0 +1,88 @@
+
+.courses-page {
+  padding: 20px;
+}
+
+.courses-page h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.courses-page .search-bar {
+  margin-bottom: 20px;
+}
+
+.courses-page .search-bar input,
+.courses-page .search-bar select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.courses-page .grid {
+  display: grid;
+  gap: 20px;
+}
+
+.courses-page .grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.courses-page .grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.courses-page .grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.courses-page .course-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.courses-page .course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.courses-page .course-card .content {
+  padding: 20px;
+}
+
+.courses-page .course-card .content h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.courses-page .course-card .content p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.courses-page .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.courses-page .pagination button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.courses-page .pagination button.active {
+  background-color: #007bff;
+  color: white;
+}

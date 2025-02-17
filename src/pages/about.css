@@ -1,0 +1,177 @@
+/* About Page styles */
+.about-page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+.about-page h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.about-page p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Subheading styles */
+.about-page h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #444;
+  position: relative;
+  display: inline-block;
+}
+
+.about-page h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Centering Grid */
+.about-page .grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Grid Columns */
+.about-page .grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.about-page .grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-page .grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Faculty Card */
+.about-page .faculty-card {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.about-page .faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Faculty Card Image */
+.about-page .faculty-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-page .faculty-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Faculty Card Content */
+.about-page .faculty-card .content {
+  padding: 20px;
+}
+
+.about-page .faculty-card .content h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.about-page .faculty-card .content p {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.vision,
+.mission {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision:hover,
+.mission:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vision h2,
+.mission h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.vision p,
+.mission p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-page .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page .grid-cols-2, 
+  .about-page .grid-cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mission-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+}
