@@ -1,12 +1,13 @@
-
 .admin-dashboard {
   padding: 20px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
 
 .admin-dashboard h1 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #fff; 
 }
 
 .admin-dashboard h2 {
@@ -14,10 +15,15 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: #fff; 
 }
 
 .admin-dashboard form {
   margin-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .admin-dashboard input,
@@ -27,6 +33,12 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.admin-dashboard input:focus,
+.admin-dashboard textarea:focus {
+  border-color: #007bff;
 }
 
 .admin-dashboard button {
@@ -36,12 +48,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .admin-dashboard button:hover {
   background-color: #0056b3;
 }
-
 
 .grid {
   display: grid;
@@ -60,18 +72,28 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-
 .card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 .card .content {
@@ -82,13 +104,13 @@
   font-size: 1.25em;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333; 
 }
 
 .card .content p {
   margin-bottom: 10px;
   color: #555;
 }
-
 
 .pagination {
   display: flex;
@@ -104,6 +126,12 @@
   background-color: white;
   color: #007bff;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #007bff;
+  color: white;
 }
 
 .pagination button.active {

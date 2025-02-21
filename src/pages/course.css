@@ -1,12 +1,14 @@
 
 .courses-page {
   padding: 20px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
 
 .courses-page h1 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
+  color:#fff;
 }
 
 .courses-page .search-bar {

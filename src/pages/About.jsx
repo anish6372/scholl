@@ -34,7 +34,7 @@ const About = () => {
         knowledge, providing quality education with a holistic approach.
       </p>
 
-      {/* Mission & Vision Section */}
+      
       <div className="mission-vision">
         <div className="vision">
           <h2>Our Vision</h2>

@@ -4,8 +4,9 @@
   color: black;
 }
 nav{
-  background-color:pink;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   padding:15px;
+  
  
 }
 
